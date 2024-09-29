@@ -1,6 +1,4 @@
 tensorflow
-scikit-learn
 librosa
-pandas
 numpy
-tqdm
+pyTelegramBotAPI
