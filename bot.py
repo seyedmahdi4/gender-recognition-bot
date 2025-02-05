@@ -1,5 +1,5 @@
 import time
-from os import remove
+from os import remove, environ
 from telebot import TeleBot
 from requests import exceptions
 from tensorflow.keras.models import Sequential
@@ -98,7 +98,7 @@ def gender_recognition(filename: str):
 
 
 # Get it from @BotFather
-API_TOKEN = ""
+API_TOKEN = environ.get('API_TOKEN')
 
 bot = TeleBot(API_TOKEN)
 
